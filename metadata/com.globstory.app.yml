@@ -3,9 +3,9 @@ Categories:
   - Science & Education
 License: MIT
 AuthorName: theRAGEhero
-SourceCode: https://github.com/theRAGEhero/globstory-android
-IssueTracker: https://github.com/theRAGEhero/globstory-android/issues
-Changelog: https://github.com/theRAGEhero/globstory-android/releases
+SourceCode: https://github.com/theRAGEhero/GlobStory-F-droid
+IssueTracker: https://github.com/theRAGEhero/GlobStory-F-droid/issues
+Changelog: https://github.com/theRAGEhero/GlobStory-F-droid/releases
 Summary: Interactive historical map with Wikipedia integration
 Description: |
   GlobStory combines an interactive OpenHistoricalMap base map with a timeline
@@ -17,7 +17,7 @@ Description: |
   access for live OpenHistoricalMap tiles and Wikimedia content.
 
 RepoType: git
-Repo: https://github.com/theRAGEhero/globstory-android.git
+Repo: https://github.com/theRAGEhero/GlobStory-F-droid.git
 
 Builds:
   - versionName: 1.1
