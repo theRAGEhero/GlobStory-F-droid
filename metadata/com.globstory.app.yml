@@ -1,0 +1,44 @@
+Categories:
+  - Navigation
+  - Science & Education
+License: MIT
+AuthorName: theRAGEhero
+SourceCode: https://github.com/theRAGEhero/globstory-android
+IssueTracker: https://github.com/theRAGEhero/globstory-android/issues
+Changelog: https://github.com/theRAGEhero/globstory-android/releases
+Summary: Interactive historical map with Wikipedia integration
+Description: |
+  GlobStory combines an interactive OpenHistoricalMap base map with a timeline
+  slider and Wikipedia article explorer. Search for places or years, jump
+  through time, and view contextual information without leaving the app.
+
+  This F-Droid build wraps the upstream web application in a local WebView and
+  vendors all runtime assets for reproducibility. It still requires Internet
+  access for live OpenHistoricalMap tiles and Wikimedia content.
+
+RepoType: git
+Repo: https://github.com/theRAGEhero/globstory-android.git
+
+Builds:
+  - versionName: 1.0
+    versionCode: 1
+    commit: v1.0
+    subdir: android-fdroid-build
+    gradle:
+      - yes
+
+AutoName: GlobStory
+CurrentVersion: 1.0
+CurrentVersionCode: 1
+UpdateCheckMode: Tags
+AutoUpdateMode: Version
+RequiresRoot: false
+AntiFeatures:
+  - NonFreeNet
+MaintainerNotes: |
+  Build with Java 11 (e.g. export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64)
+  and the Android SDK installed. Locally, the unsigned release can be produced
+  with:
+    JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 \
+    ANDROID_SDK_ROOT=/path/to/android-sdk \
+    ./gradlew assembleRelease
